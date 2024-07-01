@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 5</title>
+</head>
+<body>
+    <script>
+        function odd_even(num) {
+            if (num % 2 == 0) {
+                return 1;
+            }else{
+                return 0;
+            }
+        }
+
+        let num = 1110
+        if (odd_even(num)) {
+            console.log('EVEN')
+        }else{
+            console.log('ODD')
+        }
+
+        function larger(a,b) {
+            if (a>=b) {
+                console.log('a is larger')
+            }else{
+                console.log('b is larger')
+            }
+        }
+
+        let a = 100
+        let b = 20
+        larger(a,b);
+
+        function temprature(cel) {
+            console.log((9/5) * cel + 32)
+        }
+
+        let C = -40
+        temprature(C)
+    </script>
+</body>
+</html>

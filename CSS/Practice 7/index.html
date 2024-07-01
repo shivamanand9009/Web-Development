@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 7</title>
+    <style>
+        .pros_cont{
+            width: 90%;
+            height: 25px;
+            background-color: rgb(121, 132, 225);
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20px;
+            position: relative;
+            left: 4%;
+        }
+        .pro_bar{
+            background-color: rgb(2, 49, 103);
+            height: 100%;
+            /* width: 50%; */
+            border-radius: 20px;
+
+            animation: animate_progress 3s 5;
+
+        }
+        @keyframes  animate_progress{
+            0% {width: 0%;}
+            90% {width: 95%;}
+            95% {width: 70%;}
+            100% {width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="pros_cont">
+        <div class="pro_bar">
+
+        </div>
+    </div>
+</body>
+</html>

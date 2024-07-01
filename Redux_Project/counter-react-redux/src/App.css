@@ -1,0 +1,9 @@
+.card{
+  background-color: rgb(246, 195, 195);
+}
+.control-row{
+  margin-top: 10px;
+}
+.number-input{
+  max-width: 110px;
+}

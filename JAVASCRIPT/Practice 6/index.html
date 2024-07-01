@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 6</title>
+</head>
+<body>
+    <script>
+        let product = {
+            size : 'S',
+            name: 'T-Shirt',
+            fit: 'Regular',
+            'dilivery_time' : 'Smae day Delivery',
+
+        };
+        // let copyProduct = product;
+        // console.log(product);
+        // copyProduct.size = 'L';
+        // console.log(product);
+        // copyProduct.fit = 'Looss'
+        // console.log(product);
+        // console.log(product['dilivery_time']);
+
+        let obj = {
+            massage: 'Good Job',
+            Status: 'Complete',
+        };
+        console.log(obj);
+        let {massage,Status} = obj;
+        console.log(massage);
+        console.log(Status);
+
+
+        function iddProduct(product1, product2) {
+            if (product1 == product2) {
+                return true;
+            }
+            if (typeof product1 !== 'object' || typeof product2 !== 'object') {
+                console.warn('Parameter passed was not an object');
+            }
+            if (product1 == product2) {
+                return true;
+            }
+            if (product1.name === product2.name &&
+                product1.size === product2.size &&
+                product1.fit === product2.fit) {
+                    return true;
+            }else{
+                return false;
+            }
+        }
+        let product2 = {
+            size : 'xxx',
+            name: 'T-Shirt',
+            fit: 'Regular',
+            'dilivery_time' : 'Smae day Delivery',
+        };
+        let product3 = {
+            size : 'xxx',
+            name: 'T-Shirt',
+            fit: 'Regular',
+            'dilivery_time' : 'Smae day Delivery',
+        };
+        console.log(iddProduct(product,product2))
+        console.log(iddProduct('',product2))
+        console.log(iddProduct(product2,product3))
+        console.log(iddProduct(product,product3))
+        console.log(iddProduct(product2,product2))
+        
+        
+    </script>
+</body>
+</html>

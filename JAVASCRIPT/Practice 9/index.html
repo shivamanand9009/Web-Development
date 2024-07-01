@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .new_btn{
+            height: 100px;
+            width: 200px;
+            background-color: crimson;
+            color: aliceblue;
+            border-radius: 20px;
+            border:  none;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .js_size_btn{
+            height: 200px;
+            width: 400px;
+            background-color: crimson;
+            color: aliceblue;
+            border-radius: 20px;
+            border:  none;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button class="new_btn">
+    PUNCH ME !</button>
+
+    <script>
+
+        let arr = [1,2,3,4,5];
+        let sum = 0;
+        arr.forEach(num => sum +=num);
+        console.log(sum);
+
+        let sqr = arr.map(num => num*num);
+        console.log(sqr);
+
+
+
+
+
+
+        // let btnElement = document.querySelector('.new_btn');
+        // btnElement.addEventListener('click',event =>{
+        //     setTimeout(double_size,2000);
+        // })
+        // function double_size() {
+        //     btnElement.classList.add('js_size_btn')
+        // }
+
+
+        // let multiply = (num1,num2) => num1 * num2;
+        // console.log(multiply(5,10));
+
+        //  let greeting = () => console.log('NAMASTE');
+        //  let runtwice = inputFunction => {
+        //     inputFunction();
+        //     inputFunction();
+        //     inputFunction();
+        //  }
+        //  runtwice(greeting);
+
+
+         
+    </script>
+</body>
+</html>

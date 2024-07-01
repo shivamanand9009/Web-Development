@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+}
+.choice_but{
+    height: 100px;
+    width: 100px;
+    border: none;
+    margin: 10px;
+    background-color: rgb(205, 243, 146);
+    border-radius: 50px;
+    cursor: pointer;
+}
+.choice_img{
+    height: 75px;
+}
+#reset{
+    background-color: rgb(255, 255, 255);
+}
